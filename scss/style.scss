@@ -94,7 +94,25 @@ p {
 
 
 
+#confirmation-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 
+    .rating-message {
+        background-color: $dark-blue;
+        color: orange;
+        padding: .5rem 1rem;
+        border-radius: 2rem;
+        margin-top: 1rem;
+    }
+
+    p {
+        text-align: center;
+    }
+
+}
 
 
 
