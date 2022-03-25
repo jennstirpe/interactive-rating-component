@@ -28,7 +28,6 @@ p {
     color: $light-grey;
     line-height: 1.5rem;
     font-size: .95rem;
-    
 }
 
 .component {
@@ -79,6 +78,12 @@ p {
         color: $light-grey;
     }
 
+    .option:hover {
+        cursor: pointer;
+        background-color: $medium-grey;
+        color: $white;
+    }
+
     #submit {
         background-color: $orange;
         color: $white;
@@ -89,6 +94,12 @@ p {
         text-transform: uppercase;
         font-weight: 700;
         letter-spacing: 2.5px;
+    }
+
+    #submit:hover {
+        cursor: pointer;
+        background-color: $white;
+        color: $orange;
     }
 }
 
