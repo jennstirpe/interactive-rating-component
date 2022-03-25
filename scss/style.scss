@@ -1,2 +1,113 @@
 @import 'config';
 
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $very-dark-blue;
+    font-family: 'Overpass', sans-serif;
+}
+
+h2 {
+    color: $white;
+    margin: 1rem 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+p {
+    color: $light-grey;
+    line-height: 1.5rem;
+    font-size: .95rem;
+    
+}
+
+.component {
+    position: relative;
+}
+
+.card {
+    background: linear-gradient($dark-blue, hsl(216, 12%, 10%));
+    width: 22rem;
+    height: 23.75rem;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 1rem 0;
+}
+
+#rating-card {
+
+    #star {
+        background-color: hsl(213, 19%, 20%);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    h2 {
+        margin-top: 1.25rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        margin: 1.5rem 0;
+    }
+
+    .option {
+        padding: .9rem 1.2rem;
+        border-radius: 50%;
+        border: none;
+        background-color: $dark-blue;
+        color: $light-grey;
+    }
+
+    #submit {
+        background-color: $orange;
+        color: $white;
+        width: 100%;
+        padding: 1rem 0;
+        border-radius: 2rem;
+        border: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2.5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+
+    a { 
+        color: hsl(228, 45%, 44%); 
+    }
+
+}
+    
