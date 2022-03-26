@@ -6,6 +6,8 @@
     padding: 0;
 }
 
+/* UNIVERSAL STYLES */
+
 body {
     height: 100vh;
     width: 100%;
@@ -31,7 +33,8 @@ p {
 }
 
 .component {
-    position: relative;
+    width: 24rem;
+    height: 25rem;
 }
 
 .card {
@@ -43,7 +46,11 @@ p {
     margin: 1rem 0;
 }
 
+
+/*  RATING SELECTION CARD   */
 #rating-card {
+    position: absolute;
+    z-index: 1;
 
     #star {
         background-color: hsl(213, 19%, 20%);
@@ -84,6 +91,11 @@ p {
         color: $white;
     }
 
+    .option:active, .active, .active:hover {
+        background-color: $orange;
+        color: $white;
+    }
+
     #submit {
         background-color: $orange;
         color: $white;
@@ -104,8 +116,15 @@ p {
 }
 
 
+/*  CONFIRMATION CARD   */
 
 #confirmation-card {
+
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 250ms ease-in;
+
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -133,6 +152,9 @@ p {
 
 .attribution { 
     font-size: 11px; text-align: center; 
+    color:hsl(213, 19%, 20%);
+    bottom: 0;
+    z-index: 2;
 
     a { 
         color: hsl(228, 45%, 44%); 
